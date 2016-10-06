@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		42200D5F1DA5AA6100495C51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42200D5E1DA5AA6100495C51 /* GoogleService-Info.plist */; };
 		4299ACE01DA5792C00C6F4D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299ACDF1DA5792C00C6F4D1 /* AppDelegate.swift */; };
-		4299ACE21DA5792C00C6F4D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299ACE11DA5792C00C6F4D1 /* ViewController.swift */; };
+		4299ACE21DA5792C00C6F4D1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299ACE11DA5792C00C6F4D1 /* HomeViewController.swift */; };
 		4299ACE51DA5792D00C6F4D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4299ACE31DA5792D00C6F4D1 /* Main.storyboard */; };
 		4299ACE71DA5792D00C6F4D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4299ACE61DA5792D00C6F4D1 /* Assets.xcassets */; };
 		4299ACEA1DA5792D00C6F4D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4299ACE81DA5792D00C6F4D1 /* LaunchScreen.storyboard */; };
 		4299ACF51DA5792D00C6F4D1 /* best_burritoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299ACF41DA5792D00C6F4D1 /* best_burritoTests.swift */; };
 		4299AD001DA5792D00C6F4D1 /* best_burritoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299ACFF1DA5792D00C6F4D1 /* best_burritoUITests.swift */; };
+		42EA0F0E1DA614E900D284CF /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA0F0D1DA614E900D284CF /* RateViewController.swift */; };
 		57BFFE942AF9D418302D7487 /* Pods_best_burritoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5999E609616AD463CF8716AE /* Pods_best_burritoTests.framework */; };
 		5F1A82062D5C1AAA70D9DFD2 /* Pods_best_burritoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D756119978E55B8559F508C /* Pods_best_burritoUITests.framework */; };
 		7A97FC537719EDCCD9E1A6FC /* Pods_best_burrito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D8176D24D817506D0CA1EB /* Pods_best_burrito.framework */; };
@@ -41,7 +42,7 @@
 		42200D5E1DA5AA6100495C51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4299ACDC1DA5792C00C6F4D1 /* best-burrito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "best-burrito.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4299ACDF1DA5792C00C6F4D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4299ACE11DA5792C00C6F4D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4299ACE11DA5792C00C6F4D1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4299ACE41DA5792D00C6F4D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4299ACE61DA5792D00C6F4D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4299ACE91DA5792D00C6F4D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		4299ACFB1DA5792D00C6F4D1 /* best-burritoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "best-burritoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4299ACFF1DA5792D00C6F4D1 /* best_burritoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = best_burritoUITests.swift; sourceTree = "<group>"; };
 		4299AD011DA5792D00C6F4D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42EA0F0D1DA614E900D284CF /* RateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
 		4526C1D8A89302FD97A3F2BB /* Pods-best-burritoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-best-burritoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-best-burritoTests/Pods-best-burritoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		454D246E52929FF883661825 /* Pods-best-burritoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-best-burritoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-best-burritoUITests/Pods-best-burritoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5999E609616AD463CF8716AE /* Pods_best_burritoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_best_burritoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,7 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				4299ACDF1DA5792C00C6F4D1 /* AppDelegate.swift */,
-				4299ACE11DA5792C00C6F4D1 /* ViewController.swift */,
+				4299ACE11DA5792C00C6F4D1 /* HomeViewController.swift */,
+				42EA0F0D1DA614E900D284CF /* RateViewController.swift */,
 				4299ACE31DA5792D00C6F4D1 /* Main.storyboard */,
 				4299ACE61DA5792D00C6F4D1 /* Assets.xcassets */,
 				4299ACE81DA5792D00C6F4D1 /* LaunchScreen.storyboard */,
@@ -431,7 +434,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4299ACE21DA5792C00C6F4D1 /* ViewController.swift in Sources */,
+				42EA0F0E1DA614E900D284CF /* RateViewController.swift in Sources */,
+				4299ACE21DA5792C00C6F4D1 /* HomeViewController.swift in Sources */,
 				4299ACE01DA5792C00C6F4D1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
