@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42200D5F1DA5AA6100495C51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42200D5E1DA5AA6100495C51 /* GoogleService-Info.plist */; };
 		4299ACE01DA5792C00C6F4D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299ACDF1DA5792C00C6F4D1 /* AppDelegate.swift */; };
 		4299ACE21DA5792C00C6F4D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299ACE11DA5792C00C6F4D1 /* ViewController.swift */; };
 		4299ACE51DA5792D00C6F4D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4299ACE31DA5792D00C6F4D1 /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		4299ACEA1DA5792D00C6F4D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4299ACE81DA5792D00C6F4D1 /* LaunchScreen.storyboard */; };
 		4299ACF51DA5792D00C6F4D1 /* best_burritoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299ACF41DA5792D00C6F4D1 /* best_burritoTests.swift */; };
 		4299AD001DA5792D00C6F4D1 /* best_burritoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299ACFF1DA5792D00C6F4D1 /* best_burritoUITests.swift */; };
+		57BFFE942AF9D418302D7487 /* Pods_best_burritoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5999E609616AD463CF8716AE /* Pods_best_burritoTests.framework */; };
+		5F1A82062D5C1AAA70D9DFD2 /* Pods_best_burritoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D756119978E55B8559F508C /* Pods_best_burritoUITests.framework */; };
+		7A97FC537719EDCCD9E1A6FC /* Pods_best_burrito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D8176D24D817506D0CA1EB /* Pods_best_burrito.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42200D5E1DA5AA6100495C51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4299ACDC1DA5792C00C6F4D1 /* best-burrito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "best-burrito.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4299ACDF1DA5792C00C6F4D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4299ACE11DA5792C00C6F4D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,15 @@
 		4299ACFB1DA5792D00C6F4D1 /* best-burritoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "best-burritoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4299ACFF1DA5792D00C6F4D1 /* best_burritoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = best_burritoUITests.swift; sourceTree = "<group>"; };
 		4299AD011DA5792D00C6F4D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4526C1D8A89302FD97A3F2BB /* Pods-best-burritoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-best-burritoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-best-burritoTests/Pods-best-burritoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		454D246E52929FF883661825 /* Pods-best-burritoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-best-burritoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-best-burritoUITests/Pods-best-burritoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5999E609616AD463CF8716AE /* Pods_best_burritoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_best_burritoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D756119978E55B8559F508C /* Pods_best_burritoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_best_burritoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92BE6862B2B0DA4C99B44325 /* Pods-best-burrito.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-best-burrito.release.xcconfig"; path = "Pods/Target Support Files/Pods-best-burrito/Pods-best-burrito.release.xcconfig"; sourceTree = "<group>"; };
+		9F57D4DFE0C3DA8964F1813C /* Pods-best-burrito.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-best-burrito.debug.xcconfig"; path = "Pods/Target Support Files/Pods-best-burrito/Pods-best-burrito.debug.xcconfig"; sourceTree = "<group>"; };
+		AB99B3637785F4C637AE3F70 /* Pods-best-burritoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-best-burritoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-best-burritoTests/Pods-best-burritoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E26B77A7C6E8EB10BEAE603F /* Pods-best-burritoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-best-burritoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-best-burritoUITests/Pods-best-burritoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9D8176D24D817506D0CA1EB /* Pods_best_burrito.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_best_burrito.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A97FC537719EDCCD9E1A6FC /* Pods_best_burrito.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57BFFE942AF9D418302D7487 /* Pods_best_burritoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F1A82062D5C1AAA70D9DFD2 /* Pods_best_burritoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F0ED9AD7F19E50A42443AD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9D8176D24D817506D0CA1EB /* Pods_best_burrito.framework */,
+				5999E609616AD463CF8716AE /* Pods_best_burritoTests.framework */,
+				8D756119978E55B8559F508C /* Pods_best_burritoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4299ACD31DA5792C00C6F4D1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +108,8 @@
 				4299ACF31DA5792D00C6F4D1 /* best-burritoTests */,
 				4299ACFE1DA5792D00C6F4D1 /* best-burritoUITests */,
 				4299ACDD1DA5792C00C6F4D1 /* Products */,
+				70883A3FCD6B3C2C4C04B235 /* Pods */,
+				1F0ED9AD7F19E50A42443AD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +132,7 @@
 				4299ACE61DA5792D00C6F4D1 /* Assets.xcassets */,
 				4299ACE81DA5792D00C6F4D1 /* LaunchScreen.storyboard */,
 				4299ACEB1DA5792D00C6F4D1 /* Info.plist */,
+				42200D5E1DA5AA6100495C51 /* GoogleService-Info.plist */,
 			);
 			path = "best-burrito";
 			sourceTree = "<group>";
@@ -125,6 +155,19 @@
 			path = "best-burritoUITests";
 			sourceTree = "<group>";
 		};
+		70883A3FCD6B3C2C4C04B235 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F57D4DFE0C3DA8964F1813C /* Pods-best-burrito.debug.xcconfig */,
+				92BE6862B2B0DA4C99B44325 /* Pods-best-burrito.release.xcconfig */,
+				4526C1D8A89302FD97A3F2BB /* Pods-best-burritoTests.debug.xcconfig */,
+				AB99B3637785F4C637AE3F70 /* Pods-best-burritoTests.release.xcconfig */,
+				E26B77A7C6E8EB10BEAE603F /* Pods-best-burritoUITests.debug.xcconfig */,
+				454D246E52929FF883661825 /* Pods-best-burritoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4299AD041DA5792D00C6F4D1 /* Build configuration list for PBXNativeTarget "best-burrito" */;
 			buildPhases = (
+				D2F791DB2F73BF5C4C01A6C4 /* [CP] Check Pods Manifest.lock */,
 				4299ACD81DA5792C00C6F4D1 /* Sources */,
 				4299ACD91DA5792C00C6F4D1 /* Frameworks */,
 				4299ACDA1DA5792C00C6F4D1 /* Resources */,
+				8C185882D4FDCCC13BDFA2BC /* [CP] Embed Pods Frameworks */,
+				E7BC11B1209DDC88C9029262 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4299AD071DA5792D00C6F4D1 /* Build configuration list for PBXNativeTarget "best-burritoTests" */;
 			buildPhases = (
+				6F69403D553C8C80F10CE0F8 /* [CP] Check Pods Manifest.lock */,
 				4299ACEC1DA5792D00C6F4D1 /* Sources */,
 				4299ACED1DA5792D00C6F4D1 /* Frameworks */,
 				4299ACEE1DA5792D00C6F4D1 /* Resources */,
+				DFB674200086FEC27C19A7DC /* [CP] Embed Pods Frameworks */,
+				05900D961029C110BD194120 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4299AD0A1DA5792D00C6F4D1 /* Build configuration list for PBXNativeTarget "best-burritoUITests" */;
 			buildPhases = (
+				2060D40EAA6B2CC707FA22D4 /* [CP] Check Pods Manifest.lock */,
 				4299ACF71DA5792D00C6F4D1 /* Sources */,
 				4299ACF81DA5792D00C6F4D1 /* Frameworks */,
 				4299ACF91DA5792D00C6F4D1 /* Resources */,
+				C1703C87725C6C286E8AB4A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4299ACEA1DA5792D00C6F4D1 /* LaunchScreen.storyboard in Resources */,
+				42200D5F1DA5AA6100495C51 /* GoogleService-Info.plist in Resources */,
 				4299ACE71DA5792D00C6F4D1 /* Assets.xcassets in Resources */,
 				4299ACE51DA5792D00C6F4D1 /* Main.storyboard in Resources */,
 			);
@@ -250,6 +302,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05900D961029C110BD194120 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-best-burritoTests/Pods-best-burritoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2060D40EAA6B2CC707FA22D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6F69403D553C8C80F10CE0F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8C185882D4FDCCC13BDFA2BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-best-burrito/Pods-best-burrito-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1703C87725C6C286E8AB4A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-best-burritoUITests/Pods-best-burritoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2F791DB2F73BF5C4C01A6C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DFB674200086FEC27C19A7DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-best-burritoTests/Pods-best-burritoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7BC11B1209DDC88C9029262 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-best-burrito/Pods-best-burrito-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4299ACD81DA5792C00C6F4D1 /* Sources */ = {
@@ -399,6 +574,7 @@
 		};
 		4299AD051DA5792D00C6F4D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F57D4DFE0C3DA8964F1813C /* Pods-best-burrito.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "best-burrito/Info.plist";
@@ -410,6 +586,7 @@
 		};
 		4299AD061DA5792D00C6F4D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92BE6862B2B0DA4C99B44325 /* Pods-best-burrito.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "best-burrito/Info.plist";
@@ -421,6 +598,7 @@
 		};
 		4299AD081DA5792D00C6F4D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4526C1D8A89302FD97A3F2BB /* Pods-best-burritoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "best-burritoTests/Info.plist";
@@ -433,6 +611,7 @@
 		};
 		4299AD091DA5792D00C6F4D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB99B3637785F4C637AE3F70 /* Pods-best-burritoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "best-burritoTests/Info.plist";
@@ -445,6 +624,7 @@
 		};
 		4299AD0B1DA5792D00C6F4D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E26B77A7C6E8EB10BEAE603F /* Pods-best-burritoUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "best-burritoUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -456,6 +636,7 @@
 		};
 		4299AD0C1DA5792D00C6F4D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 454D246E52929FF883661825 /* Pods-best-burritoUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "best-burritoUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -484,6 +665,7 @@
 				4299AD061DA5792D00C6F4D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4299AD071DA5792D00C6F4D1 /* Build configuration list for PBXNativeTarget "best-burritoTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +674,7 @@
 				4299AD091DA5792D00C6F4D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4299AD0A1DA5792D00C6F4D1 /* Build configuration list for PBXNativeTarget "best-burritoUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +683,7 @@
 				4299AD0C1DA5792D00C6F4D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
