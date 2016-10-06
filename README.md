@@ -6,3 +6,5 @@
 * As a user, I want to be able to see burritos that are nearby on a map so that I can figure out where I want to go.
 * As a user, I want to be able to see all rated burritos at each restaurant (in the event the restaurant offers more than one delicious variety) so that at each restaurant, I can choose the most delicious burrito.
 
+
+###### burrito image pulled from: https://www.flickr.com/photos/roboppy/2343992051/sizes/l
