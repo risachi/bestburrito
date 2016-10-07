@@ -23,7 +23,7 @@
                                 <rect key="frame" x="-75" y="0.0" width="600" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Burrito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="aYe-Iu-wYR">
-                                <rect key="frame" x="47" y="159" width="321" height="196"/>
+                                <rect key="frame" x="47" y="150" width="321" height="196"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="aYe-Iu-wYR" secondAttribute="height" multiplier="321:196" id="PB9-Xa-VSf"/>
                                 </constraints>
@@ -32,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6X-26-VTT">
-                                <rect key="frame" x="157" y="380" width="100" height="40"/>
+                                <rect key="frame" x="157" y="371" width="100" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="35"/>
                                 <state key="normal" title="Rate">
@@ -46,7 +46,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWn-ii-d99">
-                                <rect key="frame" x="157" y="604" width="100" height="40"/>
+                                <rect key="frame" x="157" y="451" width="100" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="35"/>
@@ -64,13 +64,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aYe-Iu-wYR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="54A-ra-VT6"/>
+                            <constraint firstItem="VWn-ii-d99" firstAttribute="top" secondItem="M6X-26-VTT" secondAttribute="bottom" constant="40" id="8pM-yn-lpe"/>
                             <constraint firstItem="VWn-ii-d99" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9zE-7T-nn3"/>
                             <constraint firstItem="M6X-26-VTT" firstAttribute="top" secondItem="aYe-Iu-wYR" secondAttribute="bottom" constant="25" id="KYy-Pb-D56"/>
                             <constraint firstItem="aYe-Iu-wYR" firstAttribute="centerX" secondItem="Vn7-Pf-vVY" secondAttribute="centerX" id="Yos-yx-Mjq"/>
-                            <constraint firstItem="aYe-Iu-wYR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="139" id="bmI-Rr-IYb"/>
+                            <constraint firstItem="aYe-Iu-wYR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="130" id="bmI-Rr-IYb"/>
                             <constraint firstItem="M6X-26-VTT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fN2-y8-Gqs"/>
                             <constraint firstItem="aYe-Iu-wYR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="lMW-TA-Rxx"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VWn-ii-d99" secondAttribute="bottom" constant="92" id="xBU-pq-tcT"/>
+                            <constraint firstItem="VWn-ii-d99" firstAttribute="width" secondItem="M6X-26-VTT" secondAttribute="width" id="tw6-0Q-tpe"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
