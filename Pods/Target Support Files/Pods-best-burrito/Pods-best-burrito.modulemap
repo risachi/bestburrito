@@ -1,0 +1,6 @@
+framework module Pods_best_burrito {
+  umbrella header "Pods-best-burrito-umbrella.h"
+
+  export *
+  module * { export * }
+}

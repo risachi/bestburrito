@@ -7,7 +7,8 @@ target 'best-burrito' do
 
   # Pods for best-burrito
 
-  pod 'Firebase'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
 
   target 'best-burritoTests' do
     inherit! :search_paths
