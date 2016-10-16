@@ -85,11 +85,13 @@
                             <constraint firstItem="VWn-ii-d99" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9zE-7T-nn3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Vn7-Pf-vVY" secondAttribute="trailing" id="BTm-xB-Dht"/>
                             <constraint firstAttribute="bottom" secondItem="Vn7-Pf-vVY" secondAttribute="bottom" id="F38-Tt-4PL"/>
+                            <constraint firstItem="M6X-26-VTT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="K6g-Ke-ntn"/>
                             <constraint firstItem="M6X-26-VTT" firstAttribute="top" secondItem="aYe-Iu-wYR" secondAttribute="bottom" constant="25" id="KYy-Pb-D56"/>
                             <constraint firstItem="aYe-Iu-wYR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="130" id="bmI-Rr-IYb"/>
                             <constraint firstItem="M6X-26-VTT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fN2-y8-Gqs"/>
                             <constraint firstItem="Vn7-Pf-vVY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="flX-GJ-zTZ"/>
                             <constraint firstItem="aYe-Iu-wYR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="lMW-TA-Rxx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M6X-26-VTT" secondAttribute="trailing" constant="100" id="q2l-P3-ouI"/>
                             <constraint firstItem="VWn-ii-d99" firstAttribute="width" secondItem="M6X-26-VTT" secondAttribute="width" id="tw6-0Q-tpe"/>
                         </constraints>
                     </view>
@@ -112,8 +114,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burrito-main-image" translatesAutoresizingMaskIntoConstraints="NO" id="egk-nG-XXo"/>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="vsz-tQ-dfg">
-                                <frame key="frameInset" minX="59" minY="93" width="259" height="333"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="vsz-tQ-dfg">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Restaurant Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Kt-oJ-yUl">
                                         <frame key="frameInset" width="259" height="40"/>
@@ -152,21 +153,29 @@
                                     </segmentedControl>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkQ-3u-tdg">
-                                <frame key="frameInset" minX="59" minY="490" width="259" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkQ-3u-tdg">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
                                 <state key="normal" title="Submit"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vsz-tQ-dfg" firstAttribute="height" secondItem="S6n-aY-Hi4" secondAttribute="height" multiplier="0.5" id="9zr-LP-1c9"/>
+                            <constraint firstItem="tkQ-3u-tdg" firstAttribute="centerX" secondItem="S6n-aY-Hi4" secondAttribute="centerX" id="GO9-BB-dK7"/>
                             <constraint firstItem="egk-nG-XXo" firstAttribute="leading" secondItem="S6n-aY-Hi4" secondAttribute="leadingMargin" id="JcB-Od-LGU"/>
                             <constraint firstAttribute="bottom" secondItem="egk-nG-XXo" secondAttribute="bottom" id="Krz-Km-y3Q"/>
+                            <constraint firstItem="vsz-tQ-dfg" firstAttribute="centerY" secondItem="S6n-aY-Hi4" secondAttribute="centerY" constant="-74" id="Ljm-CU-Lwv"/>
                             <constraint firstItem="vsz-tQ-dfg" firstAttribute="centerX" secondItem="S6n-aY-Hi4" secondAttribute="centerX" id="SEh-Qt-ntO"/>
+                            <constraint firstItem="tkQ-3u-tdg" firstAttribute="width" secondItem="vsz-tQ-dfg" secondAttribute="width" id="ZWN-pJ-nye"/>
                             <constraint firstAttribute="trailingMargin" secondItem="egk-nG-XXo" secondAttribute="trailing" id="bhn-He-T6M"/>
+                            <constraint firstItem="tkQ-3u-tdg" firstAttribute="centerY" secondItem="S6n-aY-Hi4" secondAttribute="centerY" constant="194.5" id="hP9-By-ELO"/>
                             <constraint firstItem="egk-nG-XXo" firstAttribute="top" secondItem="q7r-pL-wof" secondAttribute="bottom" constant="-20" id="vRt-zT-as6"/>
                         </constraints>
                     </view>
