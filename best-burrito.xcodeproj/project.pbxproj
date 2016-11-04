@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421473DD1DCC336500DF4DF7 /* BurritoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421473DC1DCC336500DF4DF7 /* BurritoItem.swift */; };
 		42200D5F1DA5AA6100495C51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42200D5E1DA5AA6100495C51 /* GoogleService-Info.plist */; };
 		4299ACE01DA5792C00C6F4D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299ACDF1DA5792C00C6F4D1 /* AppDelegate.swift */; };
 		4299ACE21DA5792C00C6F4D1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299ACE11DA5792C00C6F4D1 /* HomeViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		421473DC1DCC336500DF4DF7 /* BurritoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurritoItem.swift; sourceTree = "<group>"; };
 		42200D5E1DA5AA6100495C51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4299ACDC1DA5792C00C6F4D1 /* best-burrito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "best-burrito.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4299ACDF1DA5792C00C6F4D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,49 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		421473DF1DCC376800DF4DF7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4299ACE11DA5792C00C6F4D1 /* HomeViewController.swift */,
+				42EA0F0D1DA614E900D284CF /* RateViewController.swift */,
+				42A51DC41DB1E5BF0091FD8C /* FindViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		421473E01DCC377400DF4DF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				421473DC1DCC336500DF4DF7 /* BurritoItem.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		421473E11DCC379000DF4DF7 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				4299ACE31DA5792D00C6F4D1 /* Main.storyboard */,
+				4299ACE81DA5792D00C6F4D1 /* LaunchScreen.storyboard */,
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
+		421473E21DCC37B000DF4DF7 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4299ACDF1DA5792C00C6F4D1 /* AppDelegate.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		421473E31DCC37CE00DF4DF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4299ACEB1DA5792D00C6F4D1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		4299ACD31DA5792C00C6F4D1 = {
 			isa = PBXGroup;
 			children = (
@@ -130,15 +175,13 @@
 		4299ACDE1DA5792C00C6F4D1 /* best-burrito */ = {
 			isa = PBXGroup;
 			children = (
-				4299ACDF1DA5792C00C6F4D1 /* AppDelegate.swift */,
-				4299ACE11DA5792C00C6F4D1 /* HomeViewController.swift */,
-				42EA0F0D1DA614E900D284CF /* RateViewController.swift */,
-				42A51DC41DB1E5BF0091FD8C /* FindViewController.swift */,
-				4299ACE31DA5792D00C6F4D1 /* Main.storyboard */,
-				4299ACE61DA5792D00C6F4D1 /* Assets.xcassets */,
-				4299ACE81DA5792D00C6F4D1 /* LaunchScreen.storyboard */,
-				4299ACEB1DA5792D00C6F4D1 /* Info.plist */,
 				42200D5E1DA5AA6100495C51 /* GoogleService-Info.plist */,
+				421473E01DCC377400DF4DF7 /* Models */,
+				421473DF1DCC376800DF4DF7 /* Controllers */,
+				421473E11DCC379000DF4DF7 /* Layouts */,
+				4299ACE61DA5792D00C6F4D1 /* Assets.xcassets */,
+				421473E21DCC37B000DF4DF7 /* Other */,
+				421473E31DCC37CE00DF4DF7 /* Supporting Files */,
 			);
 			path = "best-burrito";
 			sourceTree = "<group>";
@@ -443,6 +486,7 @@
 				42EA0F0E1DA614E900D284CF /* RateViewController.swift in Sources */,
 				4299ACE21DA5792C00C6F4D1 /* HomeViewController.swift in Sources */,
 				4299ACE01DA5792C00C6F4D1 /* AppDelegate.swift in Sources */,
+				421473DD1DCC336500DF4DF7 /* BurritoItem.swift in Sources */,
 				42A51DC51DB1E5BF0091FD8C /* FindViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
