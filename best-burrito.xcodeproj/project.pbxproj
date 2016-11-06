@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		421473DD1DCC336500DF4DF7 /* BurritoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421473DC1DCC336500DF4DF7 /* BurritoItem.swift */; };
 		42200D5F1DA5AA6100495C51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42200D5E1DA5AA6100495C51 /* GoogleService-Info.plist */; };
+		426098781DCECE1F00C22F17 /* RestaurantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426098771DCECE1F00C22F17 /* RestaurantItem.swift */; };
 		4299ACE01DA5792C00C6F4D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299ACDF1DA5792C00C6F4D1 /* AppDelegate.swift */; };
 		4299ACE21DA5792C00C6F4D1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299ACE11DA5792C00C6F4D1 /* HomeViewController.swift */; };
 		4299ACE51DA5792D00C6F4D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4299ACE31DA5792D00C6F4D1 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		421473DC1DCC336500DF4DF7 /* BurritoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurritoItem.swift; sourceTree = "<group>"; };
 		42200D5E1DA5AA6100495C51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		426098771DCECE1F00C22F17 /* RestaurantItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantItem.swift; sourceTree = "<group>"; };
 		4299ACDC1DA5792C00C6F4D1 /* best-burrito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "best-burrito.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4299ACDF1DA5792C00C6F4D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4299ACE11DA5792C00C6F4D1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				421473DC1DCC336500DF4DF7 /* BurritoItem.swift */,
+				426098771DCECE1F00C22F17 /* RestaurantItem.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42EA0F0E1DA614E900D284CF /* RateViewController.swift in Sources */,
+				426098781DCECE1F00C22F17 /* RestaurantItem.swift in Sources */,
 				4299ACE21DA5792C00C6F4D1 /* HomeViewController.swift in Sources */,
 				4299ACE01DA5792C00C6F4D1 /* AppDelegate.swift in Sources */,
 				421473DD1DCC336500DF4DF7 /* BurritoItem.swift in Sources */,

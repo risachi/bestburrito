@@ -1,25 +1,23 @@
 //
-//  BurritoItem.swift
+//  RestaurantItem.swift
 //  best-burrito
 //
-//  Created by Lisa on 11/3/16.
+//  Created by Lisa on 11/5/16.
 //  Copyright © 2016 Lisa Hackenberger. All rights reserved.
 //
 
 import Foundation
 import Firebase
 
-struct BurritoItem {
+struct RestaurantItem {
     
     let key: String
     let name: String
-    let restaurant: String
     let ref: FIRDatabaseReference?
     
-    init(name: String, restaurant: String, key: String = "") {
+    init(name: String, key: String = "") {
         self.key = key
         self.name = name
-        self.restaurant = restaurant
         self.ref = nil
     }
     
@@ -27,14 +25,12 @@ struct BurritoItem {
         key = snapshot.key
         let snapshotValue = snapshot.value as! [String: AnyObject]
         name = snapshotValue["name"] as! String
-        restaurant = snapshotValue["restaurant"] as! String
         ref = snapshot.ref
     }
     
     func toAnyObject() -> Any {
         return [
-            "name": name,
-            "restaurant": restaurant
+            "name": name
         ]
     }
     
