@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class FindViewController: UITableViewController {
     let ref = FIRDatabase.database().reference(withPath: "best-burrito")

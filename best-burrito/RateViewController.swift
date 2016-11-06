@@ -8,8 +8,14 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class RateViewController: UIViewController {
+    @IBOutlet weak var restaurantName: UITextField!
+    @IBOutlet weak var burritoName: UITextField!
+    @IBOutlet weak var recommended: UISegmentedControl!
+    
+    let ref = FIRDatabase.database().reference(withPath: "best-burrito")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +27,16 @@ class RateViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func submitRating(_ sender: Any) {
+        let restaurantNameText = restaurantName.text
+        let burritoNameText = burritoName.text
+        let selection = recommended.apportionsSegmentWidthsByContent
+        
+        let burritoItem = BurritoItem(name: burritoNameText!)
+        let burritoItemRef = self.ref.child(burritoNameText!.lowercased())
+        
+        burritoItemRef.setValue(burritoItem.toAnyObject())
+        
+    }
     
 }
