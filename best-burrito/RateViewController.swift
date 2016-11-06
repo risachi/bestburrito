@@ -27,17 +27,18 @@ class RateViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-//    @IBAction func submitRating(_ sender: Any) {
-//        let restaurantNameText = restaurantName.text
-//        let burritoNameText = burritoName.text
-//        let selection = recommended.apportionsSegmentWidthsByContent
-//
-//        let burritoItem = BurritoItem(name: burritoNameText!,
-//                                      restaurant: restaurantNameText!)
-//        let burritoItemRef = self.ref.child(burritoNameText!.lowercased())
+    @IBAction func submitRating(_ sender: Any) {
+        let restaurantNameText = restaurantName.text
+        let burritoNameText = burritoName.text
+        let selection = recommended.selectedSegmentIndex == 0
         
-//        burritoItemRef.setValue(burritoItem.toAnyObject())
+        let burritoItem = BurritoItem(name: burritoNameText!,
+                                      restaurant: restaurantNameText!,
+                                      recommended: selection)
+        let burritoItemRef = self.ref.child(burritoNameText!.lowercased())
         
-//    }
+        burritoItemRef.setValue(burritoItem.toAnyObject())
+        
+    }
     
 }
