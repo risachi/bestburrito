@@ -29,20 +29,21 @@ class FindViewController: UITableViewController {
         })
     }
     
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath)
         let burritoItem = items[indexPath.row]
         
         cell.textLabel?.text = burritoItem.name
+        cell.detailTextLabel?.text = burritoItem.name
         
         return cell
     }
     
-
-
-
-
-
+    
+    
 
 }
