@@ -13,7 +13,32 @@ import Firebase
 class FindViewController: UITableViewController {
     let ref = FIRDatabase.database().reference(withPath: "best-burrito")
 
-
+    var items: [BurritoItem] = []
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        ref.observe(.value, with: { snapshot in
+            var newItems: [BurritoItem] = []
+            for item in snapshot.children {
+                let burritoItem = BurritoItem(snapshot: item as! FIRDataSnapshot)
+                newItems.append(burritoItem)
+            }
+            
+            self.items = newItems
+            self.tableView.reloadData()
+        })
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath)
+        let burritoItem = items[indexPath.row]
+        
+        cell.textLabel?.text = burritoItem.name
+        
+        return cell
+    }
+    
 
 
 
