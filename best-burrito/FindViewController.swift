@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import Firebase
 
-class FindViewController: UIViewController {
+class FindViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let ref = FIRDatabase.database().reference(withPath: "best-burrito")
 
     var items: [BurritoItem] = []
