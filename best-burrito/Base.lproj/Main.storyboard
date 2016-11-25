@@ -127,9 +127,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burrito-main-image" translatesAutoresizingMaskIntoConstraints="NO" id="U7w-gh-bee">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="FSq-tB-6fT">
+                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="FSq-tB-6fT">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" textLabel="gQI-Qh-WZj" detailTextLabel="hNG-p7-AdK" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="FIv-oR-CLT">
@@ -170,8 +169,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="U7w-gh-bee" firstAttribute="centerY" secondItem="9lD-dk-Wd1" secondAttribute="centerY" id="0fF-Yn-XV6"/>
+                            <constraint firstItem="FSq-tB-6fT" firstAttribute="centerX" secondItem="9lD-dk-Wd1" secondAttribute="centerX" id="GqF-zl-JP9"/>
                             <constraint firstItem="U7w-gh-bee" firstAttribute="width" secondItem="9lD-dk-Wd1" secondAttribute="width" id="Hwu-fL-Q4L"/>
+                            <constraint firstItem="zG8-jr-6CI" firstAttribute="top" secondItem="FSq-tB-6fT" secondAttribute="bottom" id="Jpb-Hf-D9a"/>
+                            <constraint firstItem="FSq-tB-6fT" firstAttribute="top" secondItem="vVg-e1-9fN" secondAttribute="bottom" id="R1t-YN-aeM"/>
                             <constraint firstItem="U7w-gh-bee" firstAttribute="height" secondItem="9lD-dk-Wd1" secondAttribute="height" id="TME-kp-l01"/>
+                            <constraint firstItem="FSq-tB-6fT" firstAttribute="width" secondItem="9lD-dk-Wd1" secondAttribute="width" id="jgs-Ma-Fg0"/>
                             <constraint firstItem="U7w-gh-bee" firstAttribute="centerX" secondItem="9lD-dk-Wd1" secondAttribute="centerX" id="oHh-q2-gHw"/>
                         </constraints>
                     </view>
