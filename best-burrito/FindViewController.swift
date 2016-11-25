@@ -10,10 +10,12 @@ import Foundation
 import UIKit
 import Firebase
 
-class FindViewController: UITableViewController {
+class FindViewController: UIViewController {
     let ref = FIRDatabase.database().reference(withPath: "best-burrito")
 
     var items: [BurritoItem] = []
+    
+    @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,11 +31,11 @@ class FindViewController: UITableViewController {
         })
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath)
         let burritoItem = items[indexPath.row]
         

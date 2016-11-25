@@ -115,7 +115,7 @@
         <!--Find-->
         <scene sceneID="lsN-fP-4L9">
             <objects>
-                <viewController id="dhJ-dz-xVH" customClass="FindViewController" sceneMemberID="viewController">
+                <viewController id="dhJ-dz-xVH" customClass="FindViewController" customModule="best_burrito" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vVg-e1-9fN"/>
                         <viewControllerLayoutGuide type="bottom" id="zG8-jr-6CI"/>
@@ -157,6 +157,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="dhJ-dz-xVH" id="CVH-A0-a1Z"/>
+                                    <outlet property="delegate" destination="dhJ-dz-xVH" id="3ZG-Cw-H1y"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -168,6 +172,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Find" id="1fZ-0G-icL"/>
+                    <connections>
+                        <outlet property="tableView" destination="FSq-tB-6fT" id="VFt-2f-oVE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLa-fx-itH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
