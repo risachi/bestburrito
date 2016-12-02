@@ -12,7 +12,16 @@ import Firebase
 
 class DetailViewController: UIViewController {
     
+    @IBOutlet var burritoNameLabel: UILabel!
     
+    var burritoName = String()
     
+    func viewWillAppear(animated: Bool) {
+        burritoNameLabel.text = burritoName
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
 }

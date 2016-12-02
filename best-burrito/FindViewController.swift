@@ -46,6 +46,17 @@ class FindViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
+    // Navigation to DetailView
+    let burritoSegueIdentifier = "ShowBurritoSegue"
+    
+    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if  segue.identifier == burritoSegueIdentifier,
+            var destination = segue.destination as? DetailViewController,
+            let burritoIndex = tableView.indexPathForSelectedRow?.row
+        {
+            destination.burritoName = items[indexPath.row].name
+        }
+    }
     
 
 }
