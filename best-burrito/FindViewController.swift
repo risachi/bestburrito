@@ -54,7 +54,7 @@ class FindViewController: UIViewController, UITableViewDelegate, UITableViewData
             var destination = segue.destination as? DetailViewController,
             let burritoIndex = tableView.indexPathForSelectedRow?.row
         {
-            destination.burritoName = items[indexPath.row].name
+            destination.burritoName = items[burritoIndex].name
         }
     }
     
