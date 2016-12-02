@@ -18,6 +18,7 @@
 		4299ACF51DA5792D00C6F4D1 /* best_burritoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299ACF41DA5792D00C6F4D1 /* best_burritoTests.swift */; };
 		4299AD001DA5792D00C6F4D1 /* best_burritoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4299ACFF1DA5792D00C6F4D1 /* best_burritoUITests.swift */; };
 		42A51DC51DB1E5BF0091FD8C /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A51DC41DB1E5BF0091FD8C /* FindViewController.swift */; };
+		42C7F7661DF221170023FBD8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C7F7651DF221170023FBD8 /* DetailViewController.swift */; };
 		42EA0F0E1DA614E900D284CF /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA0F0D1DA614E900D284CF /* RateViewController.swift */; };
 		57BFFE942AF9D418302D7487 /* Pods_best_burritoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5999E609616AD463CF8716AE /* Pods_best_burritoTests.framework */; };
 		5F1A82062D5C1AAA70D9DFD2 /* Pods_best_burritoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D756119978E55B8559F508C /* Pods_best_burritoUITests.framework */; };
@@ -59,6 +60,7 @@
 		4299ACFF1DA5792D00C6F4D1 /* best_burritoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = best_burritoUITests.swift; sourceTree = "<group>"; };
 		4299AD011DA5792D00C6F4D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42A51DC41DB1E5BF0091FD8C /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		42C7F7651DF221170023FBD8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		42EA0F0D1DA614E900D284CF /* RateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
 		4526C1D8A89302FD97A3F2BB /* Pods-best-burritoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-best-burritoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-best-burritoTests/Pods-best-burritoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		454D246E52929FF883661825 /* Pods-best-burritoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-best-burritoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-best-burritoUITests/Pods-best-burritoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				4299ACE11DA5792C00C6F4D1 /* HomeViewController.swift */,
 				42EA0F0D1DA614E900D284CF /* RateViewController.swift */,
 				42A51DC41DB1E5BF0091FD8C /* FindViewController.swift */,
+				42C7F7651DF221170023FBD8 /* DetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				4299ACE01DA5792C00C6F4D1 /* AppDelegate.swift in Sources */,
 				421473DD1DCC336500DF4DF7 /* BurritoItem.swift in Sources */,
 				42A51DC51DB1E5BF0091FD8C /* FindViewController.swift in Sources */,
+				42C7F7661DF221170023FBD8 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

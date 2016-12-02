@@ -40,7 +40,7 @@ class FindViewController: UIViewController, UITableViewDelegate, UITableViewData
         let burritoItem = items[indexPath.row]
         
         cell.textLabel?.text = burritoItem.name
-        cell.detailTextLabel?.text = burritoItem.name
+        cell.detailTextLabel?.text = burritoItem.restaurant
         
         return cell
     }
