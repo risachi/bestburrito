@@ -13,12 +13,19 @@ import Firebase
 class DetailViewController: UIViewController {
     
     @IBOutlet var burritoNameLabel: UILabel!
+    @IBOutlet weak var restaurantNameLabel: UILabel!
     
-    var burritoName = String()
+    var burritoName = ""
+    var restaurantName = ""
     
-    func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         burritoNameLabel.text = burritoName
+        restaurantNameLabel.text = restaurantName
     }
+    
+    
+    // Map
+    @IBOutlet weak var mapView: GMSMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
