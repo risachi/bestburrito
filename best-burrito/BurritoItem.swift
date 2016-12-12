@@ -12,6 +12,7 @@ import Firebase
 struct BurritoItem {
     
     let key: String
+    //let placeId: String
     let name: String
     let restaurant: String
     let recommended: Bool
@@ -19,6 +20,7 @@ struct BurritoItem {
     
     init(name: String, restaurant: String, recommended: Bool, key: String = "") {
         self.key = key
+        //self.placeId = placeId
         self.name = name
         self.restaurant = restaurant
         self.recommended = recommended
@@ -28,6 +30,7 @@ struct BurritoItem {
     init(snapshot: FIRDataSnapshot) {
         key = snapshot.key
         let snapshotValue = snapshot.value as! [String: AnyObject]
+        //placeId = snapshotValue["placeId"] as! String
         name = snapshotValue["name"] as! String
         restaurant = snapshotValue["restaurant"] as! String
         recommended = snapshotValue["recommended"] as! Bool
@@ -36,6 +39,7 @@ struct BurritoItem {
     
     func toAnyObject() -> Any {
         return [
+            //"placeId": placeId,
             "name": name,
             "restaurant": restaurant,
             "recommended": recommended

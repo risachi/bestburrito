@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Firebase
+import GooglePlaces
 
 class RateViewController: UIViewController {
     @IBOutlet weak var restaurantName: UITextField!
@@ -28,13 +29,15 @@ class RateViewController: UIViewController {
     }
     
     @IBAction func submitRating(_ sender: Any) {
+        //let placeIdText = placeId.text
         let restaurantNameText = restaurantName.text
         let burritoNameText = burritoName.text
         let selection = recommended.selectedSegmentIndex == 0
         
-        let burritoItem = BurritoItem(name: burritoNameText!,
-                                      restaurant: restaurantNameText!,
-                                      recommended: selection)
+        let burritoItem = BurritoItem(//placeId:      placeIdText!,
+                                      name:         burritoNameText!,
+                                      restaurant:   restaurantNameText!,
+                                      recommended:  selection)
         let burritoItemRef = self.ref.child(burritoNameText!.lowercased())
         
         burritoItemRef.setValue(burritoItem.toAnyObject())
