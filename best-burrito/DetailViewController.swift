@@ -13,6 +13,8 @@ import GoogleMapsCore
 
 class DetailViewController: UIViewController, LocateOnTheMap {
     
+    var delegate: LocateOnTheMap!
+    
     @IBOutlet var burritoNameLabel: UILabel!
     @IBOutlet weak var restaurantNameLabel: UILabel!
     
@@ -46,7 +48,7 @@ class DetailViewController: UIViewController, LocateOnTheMap {
     
     func locateWithLongitude(lon: Double, andLatitude lat: Double, andTitle title: String) {
         
-        dispatch_get_main_queue().asynchronously() { () -> Void in
+        DispatchQueue.main.async { () -> Void in
             let position = CLLocationCoordinate2DMake(lat, lon)
             let marker = GMSMarker(position: position)
             

@@ -11,16 +11,26 @@ import UIKit
 import Firebase
 import GooglePlaces
 
-class RateViewController: UIViewController {
+class RateViewController: UIViewController, UISearchBarDelegate {
+    
+    var searchResults: [String]!
+    var delegate: LocateOnTheMap!
+    var searchResultController:SearchResultsController!
+    
     @IBOutlet weak var restaurantName: UITextField!
     @IBOutlet weak var burritoName: UITextField!
     @IBOutlet weak var recommended: UISegmentedControl!
+    
+    @IBAction func showSearchController(sender: AnyObject) {
+        let searchController = UISearchController(searchResultsController: searchResultController)
+        searchController.searchBar.delegate = self
+        self.present(searchController, animated: true, completion: nil)
+    }
     
     let ref = FIRDatabase.database().reference(withPath: "best-burrito")
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func didReceiveMemoryWarning() {
