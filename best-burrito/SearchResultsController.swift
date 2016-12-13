@@ -21,13 +21,7 @@ class SearchResultsController: UITableViewController {
         super.viewDidLoad()
         
         self.searchResults = Array()
-        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cellIdentifier")
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellIdentifier")
     }
 
     override func didReceiveMemoryWarning() {
@@ -111,12 +105,12 @@ class SearchResultsController: UITableViewController {
             
             do {
                 if data != nil{
-                    let dic = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableLeaves) as!  NSDictionary
+                    let dic = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableLeaves) as! NSDictionary
                     
-                    let lat = dic["results"]?.value(forKey: "geometry")?.value(forKey: "location")?.value(forKey: "lat").object(0) as! Double
-                    let lon = dic["results"]?.value(forKey: "geometry")?.value(forKey: "location")?.value(forKey: "lng")?.object(0) as! Double
+                    let lat = ((((dic["results"] as! NSDictionary).value(forKey: "geometry") as! NSDictionary).value(forKey: "location") as! NSDictionary).value(forKey: "lat") as! NSDictionary).object(forKey: 0) as! Double
+                    let lon = ((((dic["results"] as! NSDictionary).value(forKey: "geometry") as! NSDictionary).value(forKey: "location") as! NSDictionary).value(forKey: "lng") as! NSDictionary).object(forKey: 0) as! Double
                     
-                    self.delegate.locateWithLongitude(lon, andLatitude: lat, andTitle: self.searchResults[indexPath.row] )
+                    self.delegate.locateWithLongitude(lon: lon, andLatitude: lat, andTitle: self.searchResults[indexPath.row] )
                 }
             }catch {
                 print("Error")

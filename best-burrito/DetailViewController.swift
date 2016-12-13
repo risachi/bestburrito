@@ -9,14 +9,19 @@
 import Foundation
 import UIKit
 import Firebase
+import GoogleMapsCore
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, LocateOnTheMap {
     
     @IBOutlet var burritoNameLabel: UILabel!
     @IBOutlet weak var restaurantNameLabel: UILabel!
     
     var burritoName = ""
     var restaurantName = ""
+
+    var searchResultController:SearchResultsController!
+    var resultsArray = [String]()
+    var googleMapsView:GMSMapView!
     
     override func viewWillAppear(_ animated: Bool) {
         burritoNameLabel.text = burritoName
@@ -31,4 +36,25 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.view.addSubview(self.googleMapsView)
+        searchResultController = SearchResultsController()
+        searchResultController.delegate = self
+    }
+    
+    
+    func locateWithLongitude(lon: Double, andLatitude lat: Double, andTitle title: String) {
+        
+        dispatch_get_main_queue().asynchronously() { () -> Void in
+            let position = CLLocationCoordinate2DMake(lat, lon)
+            let marker = GMSMarker(position: position)
+            
+            let camera  = GMSCameraPosition.camera(withLatitude: lat, longitude: lon, zoom: 10)
+            self.googleMapsView.camera = camera
+            
+            marker.title = title
+            marker.map = self.googleMapsView
+        }
+    }
 }
