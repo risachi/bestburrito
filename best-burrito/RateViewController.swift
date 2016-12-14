@@ -13,6 +13,9 @@ import GooglePlaces
 
 class RateViewController: UIViewController, UISearchBarDelegate {
     
+    var restaurantString: String?
+    var placeID: String?
+    
     var searchResults: [String]!
     var delegate: LocateOnTheMap!
     var searchResultController:SearchResultsController!
@@ -31,6 +34,10 @@ class RateViewController: UIViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        restaurantName.text = restaurantString
     }
     
     override func didReceiveMemoryWarning() {

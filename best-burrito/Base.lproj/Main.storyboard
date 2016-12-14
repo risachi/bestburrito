@@ -66,7 +66,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="F1q-G6-JR7" kind="show" id="8rK-KB-gV9"/>
+                                    <action selector="rateButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="2S7-Ts-ff5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWn-ii-d99">
@@ -193,7 +193,7 @@
         <!--Rate-->
         <scene sceneID="mLl-vx-ngd">
             <objects>
-                <viewController id="F1q-G6-JR7" customClass="RateViewController" customModule="best_burrito" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RateViewController" id="F1q-G6-JR7" customClass="RateViewController" customModule="best_burrito" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q7r-pL-wof"/>
                         <viewControllerLayoutGuide type="bottom" id="2wf-kP-brD"/>
