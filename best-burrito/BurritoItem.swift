@@ -8,19 +8,20 @@
 
 import Foundation
 import Firebase
+import GooglePlaces
 
 struct BurritoItem {
     
     let key: String
-    //let placeId: String
+    let placeId: String
     let name: String
     let restaurant: String
     let recommended: Bool
     let ref: FIRDatabaseReference?
     
-    init(name: String, restaurant: String, recommended: Bool, key: String = "") {
+    init(placeId: String, name: String, restaurant: String, recommended: Bool, key: String = "") {
         self.key = key
-        //self.placeId = placeId
+        self.placeId = placeId
         self.name = name
         self.restaurant = restaurant
         self.recommended = recommended
@@ -30,7 +31,7 @@ struct BurritoItem {
     init(snapshot: FIRDataSnapshot) {
         key = snapshot.key
         let snapshotValue = snapshot.value as! [String: AnyObject]
-        //placeId = snapshotValue["placeId"] as! String
+        placeId = snapshotValue["placeId"] as! String
         name = snapshotValue["name"] as! String
         restaurant = snapshotValue["restaurant"] as! String
         recommended = snapshotValue["recommended"] as! Bool
@@ -39,7 +40,7 @@ struct BurritoItem {
     
     func toAnyObject() -> Any {
         return [
-            //"placeId": placeId,
+            "placeId": placeId,
             "name": name,
             "restaurant": restaurant,
             "recommended": recommended

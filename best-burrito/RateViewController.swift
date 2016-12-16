@@ -17,19 +17,11 @@ class RateViewController: UIViewController, UISearchBarDelegate {
     var placeID: String?
     
     var searchResults: [String]!
-    var delegate: LocateOnTheMap!
-    var searchResultController:SearchResultsController!
     
     @IBOutlet weak var restaurantName: UITextField!
     @IBOutlet weak var burritoName: UITextField!
     @IBOutlet weak var recommended: UISegmentedControl!
-    
-    @IBAction func showSearchController(sender: AnyObject) {
-        let searchController = UISearchController(searchResultsController: searchResultController)
-        searchController.searchBar.delegate = self
-        self.present(searchController, animated: true, completion: nil)
-    }
-    
+
     let ref = FIRDatabase.database().reference(withPath: "best-burrito")
     
     override func viewDidLoad() {
@@ -46,12 +38,12 @@ class RateViewController: UIViewController, UISearchBarDelegate {
     }
     
     @IBAction func submitRating(_ sender: Any) {
-        //let placeIdText = placeId.text
+        let placeIdText = placeID
         let restaurantNameText = restaurantName.text
         let burritoNameText = burritoName.text
         let selection = recommended.selectedSegmentIndex == 0
         
-        let burritoItem = BurritoItem(//placeId:      placeIdText!,
+        let burritoItem = BurritoItem(placeId:      placeIdText!,
                                       name:         burritoNameText!,
                                       restaurant:   restaurantNameText!,
                                       recommended:  selection)

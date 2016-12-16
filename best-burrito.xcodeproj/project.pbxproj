@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4209E8611DF9162400727FF5 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4209E8601DF9162400727FF5 /* Place.swift */; };
-		4209E8661DFE39FA00727FF5 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4209E8651DFE39FA00727FF5 /* SearchResultsController.swift */; };
 		421473DD1DCC336500DF4DF7 /* BurritoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421473DC1DCC336500DF4DF7 /* BurritoItem.swift */; };
 		42200D5F1DA5AA6100495C51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42200D5E1DA5AA6100495C51 /* GoogleService-Info.plist */; };
 		426098781DCECE1F00C22F17 /* RestaurantItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426098771DCECE1F00C22F17 /* RestaurantItem.swift */; };
@@ -45,9 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4209E8601DF9162400727FF5 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		4209E8621DFA274B00727FF5 /* best-burrito-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "best-burrito-Bridging-Header.h"; sourceTree = "<group>"; };
-		4209E8651DFE39FA00727FF5 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		421473DC1DCC336500DF4DF7 /* BurritoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BurritoItem.swift; sourceTree = "<group>"; };
 		42200D5E1DA5AA6100495C51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		426098771DCECE1F00C22F17 /* RestaurantItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantItem.swift; sourceTree = "<group>"; };
@@ -123,7 +119,6 @@
 				42EA0F0D1DA614E900D284CF /* RateViewController.swift */,
 				42A51DC41DB1E5BF0091FD8C /* FindViewController.swift */,
 				42C7F7651DF221170023FBD8 /* DetailViewController.swift */,
-				4209E8651DFE39FA00727FF5 /* SearchResultsController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -133,7 +128,6 @@
 			children = (
 				421473DC1DCC336500DF4DF7 /* BurritoItem.swift */,
 				426098771DCECE1F00C22F17 /* RestaurantItem.swift */,
-				4209E8601DF9162400727FF5 /* Place.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -500,8 +494,6 @@
 				42EA0F0E1DA614E900D284CF /* RateViewController.swift in Sources */,
 				426098781DCECE1F00C22F17 /* RestaurantItem.swift in Sources */,
 				4299ACE21DA5792C00C6F4D1 /* HomeViewController.swift in Sources */,
-				4209E8611DF9162400727FF5 /* Place.swift in Sources */,
-				4209E8661DFE39FA00727FF5 /* SearchResultsController.swift in Sources */,
 				4299ACE01DA5792C00C6F4D1 /* AppDelegate.swift in Sources */,
 				421473DD1DCC336500DF4DF7 /* BurritoItem.swift in Sources */,
 				42A51DC51DB1E5BF0091FD8C /* FindViewController.swift in Sources */,
