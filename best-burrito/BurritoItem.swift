@@ -19,9 +19,10 @@ struct BurritoItem {
     let recommended: Bool
     let phoneNumber: String
     let address: String
+    let coordinate: NSNumber
     let ref: FIRDatabaseReference?
     
-    init(placeId: String, name: String, restaurant: String, recommended: Bool, phoneNumber: String, address: String, key: String = "") {
+    init(placeId: String, name: String, restaurant: String, recommended: Bool, phoneNumber: String, address: String, coordinate: NSNumber, key: String = "") {
         self.key = key
         self.placeId = placeId
         self.name = name
@@ -29,6 +30,7 @@ struct BurritoItem {
         self.recommended = recommended
         self.phoneNumber = phoneNumber
         self.address = address
+        self.coordinate = coordinate
         self.ref = nil
     }
     
@@ -41,6 +43,7 @@ struct BurritoItem {
         recommended = snapshotValue["recommended"] as! Bool
         phoneNumber = snapshotValue["phoneNumber"] as! String
         address = snapshotValue["address"] as! String
+        coordinate = snapshotValue["coordinate"] as! NSNumber
         ref = snapshot.ref
     }
     
@@ -51,7 +54,8 @@ struct BurritoItem {
             "restaurant": restaurant,
             "recommended": recommended,
             "phoneNumber": phoneNumber,
-            "address": address
+            "address": address,
+            "coordinate": coordinate
         ]
     }
     
