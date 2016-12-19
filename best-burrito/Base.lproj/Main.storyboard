@@ -16,7 +16,7 @@
         <scene sceneID="Giq-nb-jQw">
             <objects>
                 <navigationController id="JWd-Ex-dUg" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pxO-j4-dwV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="pxO-j4-dwV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -135,11 +135,11 @@
                                         <rect key="frame" x="0.0" y="22" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FIv-oR-CLT" id="GSZ-pS-mJy">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gQI-Qh-WZj">
-                                                    <rect key="frame" x="15" y="13" width="34" height="21"/>
+                                                    <rect key="frame" x="15" y="12" width="34" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
@@ -147,7 +147,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hNG-p7-AdK">
-                                                    <rect key="frame" x="15" y="34" width="41" height="14"/>
+                                                    <rect key="frame" x="15" y="33" width="41" height="14"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
@@ -352,8 +352,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="HRh-w1-u7e"/>
                     <connections>
+                        <outlet property="addressLabel" destination="f93-OO-OdZ" id="Pup-Fu-LHB"/>
                         <outlet property="burritoNameLabel" destination="BZ5-Ur-gRh" id="tm5-mX-T9z"/>
                         <outlet property="mapView" destination="FHJ-Gz-0dD" id="BDJ-57-H5t"/>
+                        <outlet property="phoneNumberLabel" destination="jEN-ps-SPD" id="Bg1-ve-Dkj"/>
                         <outlet property="restaurantNameLabel" destination="x53-mq-0mR" id="INb-lF-LEY"/>
                     </connections>
                 </viewController>

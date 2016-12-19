@@ -15,6 +15,8 @@ class RateViewController: UIViewController, UISearchBarDelegate {
     
     var restaurantString: String?
     var placeID: String?
+    var phoneNumber: String?
+    var address: String?
     
     var searchResults: [String]!
     
@@ -39,6 +41,8 @@ class RateViewController: UIViewController, UISearchBarDelegate {
     
     @IBAction func submitRating(_ sender: Any) {
         let placeIdText = placeID
+        let phoneNumberText = phoneNumber
+        let addressText = address
         let restaurantNameText = restaurantName.text
         let burritoNameText = burritoName.text
         let selection = recommended.selectedSegmentIndex == 0
@@ -46,7 +50,9 @@ class RateViewController: UIViewController, UISearchBarDelegate {
         let burritoItem = BurritoItem(placeId:      placeIdText!,
                                       name:         burritoNameText!,
                                       restaurant:   restaurantNameText!,
-                                      recommended:  selection)
+                                      recommended:  selection,
+                                      phoneNumber:  phoneNumberText!,
+                                      address:      addressText!)
         let burritoItemRef = self.ref.child(burritoNameText!.lowercased())
         
         burritoItemRef.setValue(burritoItem.toAnyObject())

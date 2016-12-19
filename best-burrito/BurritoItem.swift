@@ -17,6 +17,8 @@ struct BurritoItem {
     let name: String
     let restaurant: String
     let recommended: Bool
+    let phoneNumber: String
+    let address: String
     let ref: FIRDatabaseReference?
     
     init(placeId: String, name: String, restaurant: String, recommended: Bool, key: String = "") {
@@ -25,6 +27,8 @@ struct BurritoItem {
         self.name = name
         self.restaurant = restaurant
         self.recommended = recommended
+        self.phoneNumber = phoneNumber
+        self.address = address
         self.ref = nil
     }
     
@@ -35,6 +39,8 @@ struct BurritoItem {
         name = snapshotValue["name"] as! String
         restaurant = snapshotValue["restaurant"] as! String
         recommended = snapshotValue["recommended"] as! Bool
+        phoneNumber = snapshotValue["phoneNumber"] as! String
+        address = snapshotValue["address"] as! String
         ref = snapshot.ref
     }
     
@@ -43,7 +49,9 @@ struct BurritoItem {
             "placeId": placeId,
             "name": name,
             "restaurant": restaurant,
-            "recommended": recommended
+            "recommended": recommended,
+            "phoneNumber": phoneNumber,
+            "address": address
         ]
     }
     
