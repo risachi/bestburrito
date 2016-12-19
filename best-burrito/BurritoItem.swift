@@ -21,7 +21,7 @@ struct BurritoItem {
     let address: String
     let ref: FIRDatabaseReference?
     
-    init(placeId: String, name: String, restaurant: String, recommended: Bool, key: String = "") {
+    init(placeId: String, name: String, restaurant: String, recommended: Bool, phoneNumber: String, address: String, key: String = "") {
         self.key = key
         self.placeId = placeId
         self.name = name

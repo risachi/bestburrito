@@ -33,8 +33,8 @@ class HomeViewController: UIViewController, GMSAutocompleteViewControllerDelegat
         let rateController = storyboard.instantiateViewController(withIdentifier: "RateViewController") as! RateViewController
         rateController.restaurantString = place.name
         rateController.placeID = place.placeID
-        rateController.phoneNumber = place.formatted_phone_number
-        rateController.address = place.formatted_address
+        rateController.phoneNumber = place.phoneNumber
+        rateController.address = place.formattedAddress
         
         self.navigationController?.popViewController(animated: false)
         self.navigationController?.pushViewController(rateController, animated: true)

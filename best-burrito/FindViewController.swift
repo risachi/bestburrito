@@ -57,6 +57,8 @@ class FindViewController: UIViewController, UITableViewDelegate, UITableViewData
             destination.burritoName = items[burritoIndex].name
             destination.restaurantName = items[burritoIndex].restaurant
             destination.placeIdName = items[burritoIndex].placeId
+            destination.phoneNumberName = items[burritoIndex].phoneNumber
+            destination.addressName = items[burritoIndex].address
         }
     }
     

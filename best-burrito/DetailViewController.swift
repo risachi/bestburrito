@@ -20,18 +20,20 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var phoneNumberLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     
-    
     var burritoName = ""
     var restaurantName = ""
-    var phoneNumber = ""
+    var phoneNumberName = ""
+    var addressName = ""
     var placeIdName = ""
+    var coordinate = CLLocationCoordinate2D
 
     var resultsArray = [String]()
     
     override func viewWillAppear(_ animated: Bool) {
         burritoNameLabel.text = burritoName
         restaurantNameLabel.text = restaurantName
-        phoneNumberLabel.text = place.formatted_phone_number
+        phoneNumberLabel.text = phoneNumberName
+        addressLabel.text = addressName
     }
     
     
@@ -41,11 +43,10 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //CLLocationCoordinate2D(latitude: 10, longitude: 10)
-        let position = placeIdName as! CLLocationCoordinate2D
-        let marker = GMSMarker(position: position)
-        marker.title = burritoName
-        marker.map = mapView
+        //let position = coordinate
+        //let marker = GMSMarker(position: position)
+        //marker.title = burritoName
+        //marker.map = mapView
     }
 
 }
