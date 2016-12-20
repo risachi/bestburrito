@@ -1,26 +1,380 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JWd-Ex-dUg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="Giq-nb-jQw">
+            <objects>
+                <navigationController id="JWd-Ex-dUg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pxO-j4-dwV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ONh-so-YqN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9v-iF-ALp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-642" y="346"/>
+        </scene>
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="best_burrito" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="best_burrito" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="burrito-main-image" translatesAutoresizingMaskIntoConstraints="NO" id="Vn7-Pf-vVY">
+                                <rect key="frame" x="16" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Burrito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="aYe-Iu-wYR">
+                                <rect key="frame" x="43" y="194" width="289" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aYe-Iu-wYR" secondAttribute="height" multiplier="321:196" id="PB9-Xa-VSf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="60"/>
+                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6X-26-VTT">
+                                <rect key="frame" x="116" y="396" width="143" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="35"/>
+                                <state key="normal" title="Rate">
+                                    <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="rateButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="2S7-Ts-ff5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="40" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWn-ii-d99">
+                                <rect key="frame" x="116" y="476" width="143" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="35"/>
+                                <state key="normal" title="Find">
+                                    <color key="titleColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="dhJ-dz-xVH" kind="show" id="IAc-fJ-C42"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aYe-Iu-wYR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="54A-ra-VT6"/>
+                            <constraint firstItem="VWn-ii-d99" firstAttribute="top" secondItem="M6X-26-VTT" secondAttribute="bottom" constant="40" id="8pM-yn-lpe"/>
+                            <constraint firstItem="VWn-ii-d99" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9zE-7T-nn3"/>
+                            <constraint firstItem="M6X-26-VTT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="K6g-Ke-ntn"/>
+                            <constraint firstItem="M6X-26-VTT" firstAttribute="top" secondItem="aYe-Iu-wYR" secondAttribute="bottom" constant="25" id="KYy-Pb-D56"/>
+                            <constraint firstItem="Vn7-Pf-vVY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OCv-Wi-GjT"/>
+                            <constraint firstItem="Vn7-Pf-vVY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="XYG-Qr-JqH"/>
+                            <constraint firstItem="Vn7-Pf-vVY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="bDD-Q9-dKa"/>
+                            <constraint firstItem="aYe-Iu-wYR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="130" id="bmI-Rr-IYb"/>
+                            <constraint firstItem="M6X-26-VTT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fN2-y8-Gqs"/>
+                            <constraint firstItem="Vn7-Pf-vVY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hat-Tk-LqN"/>
+                            <constraint firstItem="aYe-Iu-wYR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="lMW-TA-Rxx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M6X-26-VTT" secondAttribute="trailing" constant="100" id="q2l-P3-ouI"/>
+                            <constraint firstItem="VWn-ii-d99" firstAttribute="width" secondItem="M6X-26-VTT" secondAttribute="width" id="tw6-0Q-tpe"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Home" id="A7x-tM-nnr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137" y="346"/>
+        </scene>
+        <!--Find-->
+        <scene sceneID="lsN-fP-4L9">
+            <objects>
+                <viewController id="dhJ-dz-xVH" customClass="FindViewController" customModule="best_burrito" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vVg-e1-9fN"/>
+                        <viewControllerLayoutGuide type="bottom" id="zG8-jr-6CI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9lD-dk-Wd1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burrito-main-image" translatesAutoresizingMaskIntoConstraints="NO" id="U7w-gh-bee">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="FSq-tB-6fT">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ItemCell" textLabel="gQI-Qh-WZj" detailTextLabel="hNG-p7-AdK" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="FIv-oR-CLT">
+                                        <rect key="frame" x="0.0" y="22" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FIv-oR-CLT" id="GSZ-pS-mJy">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gQI-Qh-WZj">
+                                                    <rect key="frame" x="15" y="12" width="34" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hNG-p7-AdK">
+                                                    <rect key="frame" x="15" y="33" width="41" height="14"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="SZa-oP-M24" kind="show" identifier="ShowBurritoSegue" id="niV-Bp-34H"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="dhJ-dz-xVH" id="CVH-A0-a1Z"/>
+                                    <outlet property="delegate" destination="dhJ-dz-xVH" id="3ZG-Cw-H1y"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U7w-gh-bee" firstAttribute="centerY" secondItem="9lD-dk-Wd1" secondAttribute="centerY" id="0fF-Yn-XV6"/>
+                            <constraint firstItem="FSq-tB-6fT" firstAttribute="centerX" secondItem="9lD-dk-Wd1" secondAttribute="centerX" id="GqF-zl-JP9"/>
+                            <constraint firstItem="U7w-gh-bee" firstAttribute="width" secondItem="9lD-dk-Wd1" secondAttribute="width" id="Hwu-fL-Q4L"/>
+                            <constraint firstItem="zG8-jr-6CI" firstAttribute="top" secondItem="FSq-tB-6fT" secondAttribute="bottom" id="Jpb-Hf-D9a"/>
+                            <constraint firstItem="FSq-tB-6fT" firstAttribute="top" secondItem="vVg-e1-9fN" secondAttribute="bottom" id="R1t-YN-aeM"/>
+                            <constraint firstItem="U7w-gh-bee" firstAttribute="height" secondItem="9lD-dk-Wd1" secondAttribute="height" id="TME-kp-l01"/>
+                            <constraint firstItem="FSq-tB-6fT" firstAttribute="width" secondItem="9lD-dk-Wd1" secondAttribute="width" id="jgs-Ma-Fg0"/>
+                            <constraint firstItem="U7w-gh-bee" firstAttribute="centerX" secondItem="9lD-dk-Wd1" secondAttribute="centerX" id="oHh-q2-gHw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Find" id="1fZ-0G-icL"/>
+                    <connections>
+                        <outlet property="tableView" destination="FSq-tB-6fT" id="VFt-2f-oVE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cLa-fx-itH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="1127"/>
+        </scene>
+        <!--Rate-->
+        <scene sceneID="mLl-vx-ngd">
+            <objects>
+                <viewController storyboardIdentifier="RateViewController" id="F1q-G6-JR7" customClass="RateViewController" customModule="best_burrito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q7r-pL-wof"/>
+                        <viewControllerLayoutGuide type="bottom" id="2wf-kP-brD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S6n-aY-Hi4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="burrito-main-image" translatesAutoresizingMaskIntoConstraints="NO" id="egk-nG-XXo">
+                                <rect key="frame" x="16" y="44" width="512" height="623"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="vsz-tQ-dfg">
+                                <rect key="frame" x="58" y="93" width="259" height="334"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Kt-oJ-yUl">
+                                        <rect key="frame" x="0.0" y="0.0" width="259" height="40"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
+                                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a5a-RD-Laa">
+                                        <rect key="frame" x="0.0" y="65" width="259" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Burrito Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SY2-Ew-yW0">
+                                        <rect key="frame" x="0.0" y="120" width="259" height="40"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
+                                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kwe-8p-Mzr">
+                                        <rect key="frame" x="0.0" y="186" width="259" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommend?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Jq-aN-AaC">
+                                        <rect key="frame" x="0.0" y="241" width="259" height="40"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
+                                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NAA-ZY-ZBe">
+                                        <rect key="frame" x="0.0" y="306" width="259" height="29"/>
+                                        <segments>
+                                            <segment title="Yes"/>
+                                            <segment title="No"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkQ-3u-tdg">
+                                <rect key="frame" x="58" y="502" width="259" height="52"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="30"/>
+                                <state key="normal" title="Submit"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submitRating:" destination="F1q-G6-JR7" eventType="touchUpInside" id="Ebu-RS-jD3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vsz-tQ-dfg" firstAttribute="height" secondItem="S6n-aY-Hi4" secondAttribute="height" multiplier="0.5" id="9zr-LP-1c9"/>
+                            <constraint firstItem="tkQ-3u-tdg" firstAttribute="centerX" secondItem="S6n-aY-Hi4" secondAttribute="centerX" id="GO9-BB-dK7"/>
+                            <constraint firstItem="vsz-tQ-dfg" firstAttribute="centerY" secondItem="S6n-aY-Hi4" secondAttribute="centerY" constant="-74" id="Ljm-CU-Lwv"/>
+                            <constraint firstItem="vsz-tQ-dfg" firstAttribute="centerX" secondItem="S6n-aY-Hi4" secondAttribute="centerX" id="SEh-Qt-ntO"/>
+                            <constraint firstItem="egk-nG-XXo" firstAttribute="width" secondItem="S6n-aY-Hi4" secondAttribute="width" id="SZj-V8-wah"/>
+                            <constraint firstItem="egk-nG-XXo" firstAttribute="height" secondItem="S6n-aY-Hi4" secondAttribute="height" id="X01-Hw-HmG"/>
+                            <constraint firstItem="tkQ-3u-tdg" firstAttribute="width" secondItem="vsz-tQ-dfg" secondAttribute="width" id="ZWN-pJ-nye"/>
+                            <constraint firstItem="egk-nG-XXo" firstAttribute="centerY" secondItem="S6n-aY-Hi4" secondAttribute="centerY" id="crv-5d-kMT"/>
+                            <constraint firstItem="tkQ-3u-tdg" firstAttribute="centerY" secondItem="S6n-aY-Hi4" secondAttribute="centerY" constant="194.5" id="hP9-By-ELO"/>
+                            <constraint firstItem="egk-nG-XXo" firstAttribute="centerX" secondItem="S6n-aY-Hi4" secondAttribute="centerX" id="x91-iy-Th9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rate" id="5ar-lI-BWX">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="BfF-yq-C90"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="burritoName" destination="kwe-8p-Mzr" id="40a-Td-hZn"/>
+                        <outlet property="recommended" destination="NAA-ZY-ZBe" id="Wey-CM-vZE"/>
+                        <outlet property="restaurantName" destination="a5a-RD-Laa" id="GDa-oz-noB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VPa-3K-8v3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="961" y="346"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="PeK-Px-Rk2">
+            <objects>
+                <viewController title="Detail" id="SZa-oP-M24" customClass="DetailViewController" customModule="best_burrito" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ygJ-L4-ueN"/>
+                        <viewControllerLayoutGuide type="bottom" id="On6-e7-2K5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HQ7-3G-qYH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burrito-main-image" translatesAutoresizingMaskIntoConstraints="NO" id="Upd-3G-WPK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Burrito Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZ5-Ur-gRh">
+                                <rect key="frame" x="50" y="124" width="275" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x53-mq-0mR">
+                                <rect key="frame" x="50" y="153" width="275" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEN-ps-SPD">
+                                <rect key="frame" x="50" y="201" width="275" height="33"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHJ-Gz-0dD" customClass="GMSMapView">
+                                <rect key="frame" x="16" y="296" width="343" height="351"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address Line 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f93-OO-OdZ">
+                                <rect key="frame" x="50" y="242" width="275" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="rk4-6o-vsM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Upd-3G-WPK" firstAttribute="height" secondItem="HQ7-3G-qYH" secondAttribute="height" id="3yH-bs-POi"/>
+                            <constraint firstItem="FHJ-Gz-0dD" firstAttribute="leading" secondItem="HQ7-3G-qYH" secondAttribute="leadingMargin" id="985-NR-jhC"/>
+                            <constraint firstItem="Upd-3G-WPK" firstAttribute="width" secondItem="HQ7-3G-qYH" secondAttribute="width" id="CmU-Fj-7au"/>
+                            <constraint firstItem="f93-OO-OdZ" firstAttribute="top" secondItem="HQ7-3G-qYH" secondAttribute="top" constant="242" id="FIS-hg-v3Z"/>
+                            <constraint firstItem="jEN-ps-SPD" firstAttribute="leading" secondItem="x53-mq-0mR" secondAttribute="leading" id="FrL-YJ-dyc"/>
+                            <constraint firstItem="x53-mq-0mR" firstAttribute="leading" secondItem="HQ7-3G-qYH" secondAttribute="leadingMargin" constant="34" id="MvN-MW-goN"/>
+                            <constraint firstItem="f93-OO-OdZ" firstAttribute="width" secondItem="jEN-ps-SPD" secondAttribute="width" id="PI1-RQ-Ner"/>
+                            <constraint firstItem="jEN-ps-SPD" firstAttribute="width" secondItem="x53-mq-0mR" secondAttribute="width" id="QwI-A5-sgm"/>
+                            <constraint firstItem="x53-mq-0mR" firstAttribute="width" secondItem="BZ5-Ur-gRh" secondAttribute="width" id="V1z-2c-cmd"/>
+                            <constraint firstItem="x53-mq-0mR" firstAttribute="top" secondItem="BZ5-Ur-gRh" secondAttribute="bottom" constant="8" id="bpb-BU-Ytf"/>
+                            <constraint firstAttribute="bottom" secondItem="FHJ-Gz-0dD" secondAttribute="bottom" constant="20" symbolic="YES" id="dtA-XL-nUx"/>
+                            <constraint firstItem="FHJ-Gz-0dD" firstAttribute="top" secondItem="f93-OO-OdZ" secondAttribute="bottom" constant="17" id="e1w-Zr-wTX"/>
+                            <constraint firstItem="f93-OO-OdZ" firstAttribute="centerX" secondItem="FHJ-Gz-0dD" secondAttribute="centerX" id="fbi-2E-CnQ"/>
+                            <constraint firstItem="f93-OO-OdZ" firstAttribute="top" secondItem="jEN-ps-SPD" secondAttribute="bottom" constant="8" symbolic="YES" id="gkY-8W-tPp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BZ5-Ur-gRh" secondAttribute="trailing" constant="34" id="jf0-LX-QHV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x53-mq-0mR" secondAttribute="trailing" constant="34" id="l05-en-Yi5"/>
+                            <constraint firstItem="BZ5-Ur-gRh" firstAttribute="top" secondItem="ygJ-L4-ueN" secondAttribute="bottom" constant="60" id="moo-vC-GRV"/>
+                            <constraint firstItem="f93-OO-OdZ" firstAttribute="leading" secondItem="jEN-ps-SPD" secondAttribute="leading" id="pCs-Ub-z78"/>
+                            <constraint firstItem="Upd-3G-WPK" firstAttribute="centerY" secondItem="HQ7-3G-qYH" secondAttribute="centerY" id="qkS-y0-0dP"/>
+                            <constraint firstItem="BZ5-Ur-gRh" firstAttribute="leading" secondItem="HQ7-3G-qYH" secondAttribute="leadingMargin" constant="34" id="v5k-HZ-oAh"/>
+                            <constraint firstItem="Upd-3G-WPK" firstAttribute="centerX" secondItem="HQ7-3G-qYH" secondAttribute="centerX" id="vM9-cX-cbe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail" id="HRh-w1-u7e"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="f93-OO-OdZ" id="Pup-Fu-LHB"/>
+                        <outlet property="burritoNameLabel" destination="BZ5-Ur-gRh" id="tm5-mX-T9z"/>
+                        <outlet property="mapView" destination="FHJ-Gz-0dD" id="BDJ-57-H5t"/>
+                        <outlet property="phoneNumberLabel" destination="jEN-ps-SPD" id="Bg1-ve-Dkj"/>
+                        <outlet property="restaurantNameLabel" destination="x53-mq-0mR" id="INb-lF-LEY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbz-ND-MQq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.79999999999995" y="1126.6866566716642"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="burrito-main-image" width="512" height="341"/>
+    </resources>
 </document>
