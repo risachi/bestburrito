@@ -25,7 +25,8 @@ class DetailViewController: UIViewController {
     var phoneNumberName = ""
     var addressName = ""
     var placeIdName = ""
-    var coordinate = CLLocationCoordinate2D
+    var latName: Double?
+    var longName: Double?
 
     var resultsArray = [String]()
     
@@ -43,10 +44,15 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //let position = coordinate
-        //let marker = GMSMarker(position: position)
-        //marker.title = burritoName
-        //marker.map = mapView
+        let mapCamera = GMSCameraPosition.camera(withLatitude: latName!,
+                                              longitude: longName!,
+                                              zoom: 15)
+        
+        let coordinate = CLLocationCoordinate2D(latitude: latName!, longitude: longName!)
+        let marker = GMSMarker(position: coordinate)
+        marker.title = burritoName
+        marker.map = mapView
+        mapView.camera = mapCamera
     }
 
 }

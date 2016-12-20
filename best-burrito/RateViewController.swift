@@ -17,7 +17,8 @@ class RateViewController: UIViewController, UISearchBarDelegate {
     var placeID: String?
     var phoneNumber: String?
     var address: String?
-    var coordinate: NSNumber?
+    var lat: Double?
+    var long: Double?
     
     var searchResults: [String]!
     
@@ -44,7 +45,8 @@ class RateViewController: UIViewController, UISearchBarDelegate {
         let placeIdText = placeID
         let phoneNumberText = phoneNumber
         let addressText = address
-        let coordinateText = coordinate
+        let latText = lat
+        let longText = long
         let restaurantNameText = restaurantName.text
         let burritoNameText = burritoName.text
         let selection = recommended.selectedSegmentIndex == 0
@@ -55,7 +57,8 @@ class RateViewController: UIViewController, UISearchBarDelegate {
                                       recommended:  selection,
                                       phoneNumber:  phoneNumberText!,
                                       address:      addressText!,
-                                      coordinate:   coordinateText!)
+                                      lat:          latText!,
+                                      long:         longText!)
         let burritoItemRef = self.ref.child(burritoNameText!.lowercased())
         
         burritoItemRef.setValue(burritoItem.toAnyObject())

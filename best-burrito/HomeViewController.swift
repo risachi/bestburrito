@@ -35,7 +35,8 @@ class HomeViewController: UIViewController, GMSAutocompleteViewControllerDelegat
         rateController.placeID = place.placeID
         rateController.phoneNumber = place.phoneNumber
         rateController.address = place.formattedAddress
-        rateController.coordinate = place.coordinate
+        rateController.lat = place.coordinate.latitude
+        rateController.long = place.coordinate.longitude
         
         self.navigationController?.popViewController(animated: false)
         self.navigationController?.pushViewController(rateController, animated: true)
